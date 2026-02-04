@@ -84,7 +84,7 @@
 <details>
 <summary>Опциональные настройки</summary>
    
-- [Удаление компонентов IPv6 и Netfilter](#удаление-компонентов-ipv6-и-netfilter)
+- [Удаление компонентов IP и Netfilter](#удаление-компонентов-ip-и-netfilter)
 - [Исправление ошибки «panic: runtime error: slice bounds out of range»](#ошибка-runtime-error-slice-bounds-out-of-range)
 - [Обновление ядра XRAY до последней версии](#обновление-ядра-xray-до-последней-версии)
 - [Настройка автоматического обновления файлов geosite](#настройка-автоматического-обновления-файлов-geosite_zkeendat-и-geoip_zkeenipdat)
@@ -327,6 +327,8 @@ sudo $(brew --prefix e2fsprogs)/sbin/e2label /dev/disk14 OPKG
 - [ ] Сервер SSH
 
 > *Перед установкой Entware убедитесь, что компонент прошивки Кинетика «**Сервер SSH**» не установлен. Если он установлен, удалите его, так как Entware использует собственный SSH-сервер.*
+> 
+> *В KeeneticOS 5+ компонент **Протокол IPv6** всегда включён и не может быть отключён в разделе «**Изменить набор компонентов**»*
 
 <p align="center">
   <a href="http://192.168.1.1/system/components" target="_blank" rel="noopener noreferrer">
