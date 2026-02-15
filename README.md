@@ -580,7 +580,7 @@ opkg upgrade
 
 Все параметры запуска с их описанием доступны в справке по команде `xkeen -h`
 
-[*Разработкой форка Xkeen занимается JamesZero*](https://github.com/jameszeroX/XKeen/tree/main/test).
+[*Разработкой форка Xkeen занимается JamesZero*](https://github.com/jameszeroX).
 
 ---
   
@@ -1152,14 +1152,15 @@ xkeen -start
 > **Для этого нужно подключиться к Entware по SSH под пользователем root и выполнить команду:**
 >
 > ```bash
-> xkeen -ap 443,80
+> xkeen -ap 443,80 
 > ```
->
+> **Примечание**: *Если вы используете форк XKeen версии 1.1.3.9 и выше, рекомендуется добавлять порты через редактирование файла **port_proxying.lst**, расположенного в директории ```etc\xkeen```*
+> 
 > *Эта настройка поможет сделать сеть более стабильной и повысить её общую производительность.*
 
 <br>
 
-> **Примечание**: *Если вам всё-таки важны результаты замеров скорости, то для достоверного результата необходимо соблюдать, как минимум, два условия:
+>*Если вам важны результаты замеров скорости, то для достоверного результата необходимо соблюдать, как минимум, два условия:
 — не ограничивать порты проксирования 80 и 443;
 — не использовать роутинг (временно удалить routing.json и перезапустить xkeen).*
 
@@ -1456,6 +1457,8 @@ xkeen -ap 50000:50030
 ```
 
 Сервис xkeen перезапустится автоматически.
+
+> **Примечание**: *Если вы используете форк XKeen версии 1.1.3.9 и выше, рекомендуется добавлять порты через редактирование файла **port_proxying.lst**, расположенного в директории ```etc\xkeen```*
 
 
 <br><br>
@@ -1759,6 +1762,13 @@ sudo sysctl -p
 
 <br>
 
+### Полезные ссылки
+
+- XKeen UI — https://github.com/zxc-rv/XKeen-UI
+- XKeen UI — https://github.com/umarcheh001/Xkeen-UI
+- SubKeen — https://github.com/V2as/SubKeen
+- Mihomo Studio — https://github.com/l-ptrol/mihomo_studio
+- Конвертер JSON-подписок — https://sngvy.github.io/json-sub-to-outbounds
 - [Настройка TCP BBR](https://telegra.ph/Nastrojka-TCP-BBR-08-15)
 - [AdGuard Home Keenetic 4.2 beta 3](https://github.com/Corvus-Malus/AdGuardHome-Keenetic)
 - [Обновление Xray — Настройка Балансировки и Ротации Трафика](https://telegra.ph/Balansirovka-i-Rotaciya-Trafika-08-20)
